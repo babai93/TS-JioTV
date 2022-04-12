@@ -1,4 +1,5 @@
 <?php
+header('Content-disposition: attachment; filename="playlist.m3u8"')
 header("Content-Type: application/vnd.apple.mpegurl");
 echo '#EXTM3U' . PHP_EOL;
 echo '#EXTM3U x-tvg-url="https://github.com/mitthu786/tvepg/releases/download/latest/epg.xml.gz"' . PHP_EOL;
